@@ -6,7 +6,7 @@ import streamlit as st
 
 sns.set(style='darkgrid')
 
-days_df = pd.read_csv("days_dataframe.csv")
+days_df = pd.read_csv("https://raw.githubusercontent.com/mochammadqaysa/submission-analysis-data/refs/heads/main/dashboard/days_dataframe.csv")
 days_df["dteday"] = pd.to_datetime(days_df["dteday"])
 
 min_date = days_df["dteday"].min()
